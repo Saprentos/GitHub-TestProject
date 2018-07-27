@@ -7,12 +7,20 @@
     <script type="text/javascript" src="script.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 </head>
-<body >
-<div class="wrapper">
-    <div class="bar"></div>
-    <div class="progressBar"></div>
+<body>
+
+<div class="woodWrapper">
+    <div class="woodBar"></div>
+    <div class="woodProgressBar"></div>
 </div>
-<input type="button" id="startButton" name="Start" value="Start" onclick="progress()">
-<input type="button" id="upgradingButton" name="Level" value="Level UP">
+<input type="button" id="woodStartButton" name="woodStartButton" value="Wood" onclick="woodProgress()">
+
+
+<div class="stoneWrapper">
+    <div class="stoneBar"></div>
+    <div class="stoneProgressBar"></div>
+</div>
+<input type="button" id="stoneStartButton" name="stoneStartButton" value="Stone" onclick="stoneProgress()">
+
 </body>
 </html>
