@@ -20,7 +20,6 @@
             }
         }
     }
-
     function stoneProgress() {
         let processBar = document.querySelector(".stoneProgressBar");
         if (setProgress) {

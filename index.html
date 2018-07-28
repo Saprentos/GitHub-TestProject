@@ -8,19 +8,31 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 </head>
 <body>
+<div class="main inline">
+<div class="statistic">
+<div>Money: <input type="text" id="allMoney" title="Money" name="Money">
+</div>
+<div>Workers: <input type="text" id="allWorkers" title="Workers" name="Workers">
+</div>
+    <div>Wood: <input type="text" id="allWood" title="Wood" name="Wood">
+    </div>
+    <div>Stone: <input type="text" id="allStone" title="Stone" name="Stone">
+    </div>
 
+</div>
+<div class="processBox">
 <div class="woodWrapper">
     <div class="woodBar"></div>
     <div class="woodProgressBar"></div>
 </div>
 <input type="button" id="woodStartButton" name="woodStartButton" value="Wood" onclick="woodProgress()">
 
-
 <div class="stoneWrapper">
     <div class="stoneBar"></div>
     <div class="stoneProgressBar"></div>
 </div>
 <input type="button" id="stoneStartButton" name="stoneStartButton" value="Stone" onclick="stoneProgress()">
-
+</div>
+</div>
 </body>
 </html>
