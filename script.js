@@ -20,8 +20,10 @@ function calc() {
         setProgress = setInterval(progressBar, 10);
         let width = 0;
         let widthMax = 100;
+        let oneWood = 0;
         function progressBar() {
             if (width >= widthMax) {
+                oneWood += 1;
                 clearInterval(setProgress);
             }
             else {
@@ -29,6 +31,7 @@ function calc() {
                 processBar.style.width = width + "%";
                 processBar.textContent = width + "%";
             }
+            document.getElementById('allWood').innerHTML = oneWood;
         }
     }
 
