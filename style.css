@@ -91,3 +91,19 @@ div.inline{font-size:0;} /* Ставим родителю значение 0, ч
     cursor: pointer;
     outline: 0 !important; /*Рамка вокруг выделенной кнопки*/
 }
+#allMoney {
+    margin: 15px;
+    padding: 5px;
+}
+#allWorkers {
+    margin: 15px;
+    padding: 5px;
+}
+#allWood {
+    margin: 31px;
+    padding: 5px;
+}
+#allStone {
+    margin: 32px;
+    padding: 5px;
+}

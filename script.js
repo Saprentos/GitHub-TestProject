@@ -1,4 +1,5 @@
     let setProgress;
+
 function calc() {
      let wood;
      let stone;
