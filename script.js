@@ -44,15 +44,18 @@ function calc() {
         setProgress = setInterval(progressBar, 25);
         let width = 0;
         let widthMax = 100;
+        let oneStone = 0;
 
         function progressBar() {
             if (width >= widthMax) {
                 clearInterval(setProgress);
+                oneStone +=1;
             }
             else {
                 width += 1;
                 processBar.style.width = width + "%";
                 processBar.textContent = width + "%";
             }
+            document.getElementById('allStone').innerHTML = oneStone;
         }
     }
