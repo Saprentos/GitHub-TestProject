@@ -4,36 +4,72 @@
     <meta charset="UTF-8">
     <title>Saprentos Project</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.css">
 </head>
-<body>
-<div class="main inline">
-<div class="statistic">
-    <div>Money: <output id="allMoney">0.00</output>
-</div>
-    <div>Workers: <output id="allWorkers">0</output>
-</div>
-    <div>Wood: <output id="allWood">0</output>
-    </div>
-    <div>Stone: <output id="allStone">0</output>
-    </div>
-    <button id="calc" onclick="calc()">Calculation</button>
-</div>
-<div class="processBox">
-<div class="woodWrapper">
-    <div class="woodBar"></div>
-    <div class="woodProgressBar"></div>
-</div>
-<input type="button" id="woodStartButton" name="woodStartButton" value="Wood" onclick="woodProgress()">
+<body class="body">
 
-<div class="stoneWrapper">
-    <div class="stoneBar"></div>
-    <div class="stoneProgressBar"></div>
+
+<!--Верхние блоки "Статистика" "Прогресс Бары" "Рынок"-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="block-example-top" id="statistic-top">STATISTIC</div>
+        </div>
+        <div class="col-md-5">
+            <div class="block-example-top" id="progress-bar-top">PROGRESS BARS</div>
+        </div>
+        <div class="col-md-4">
+            <div class="block-example-top" id="market-top">MARKET</div>
+        </div>
+        </div>
+
+    <!--Средние блоки "Статистика" "Прогресс Бары" "Рынок" с заполняемой информацией-->
+    <div class="row">
+
+        <!--Статистика-->
+        <div class="col-md-3">
+            <div class="block-example-mid"><div>Money: <output id="allMoney">0</output>
+            </div>
+                <div>Workers: <output id="allWorkers">0</output>
+                </div>
+                <div>Wood: <output id="allWood">0</output>
+                </div>
+                <div>Stone: <output id="allStone">0</output>
+                </div>
+                <button id="calc" onclick="calc()">Calculation</button>
+            </div>
+        </div>
+
+        <!--Прогресс Бары-->
+        <div class="col-md-5">
+            <div class="block-example-mid">
+                <div class="processBox">
+                <div class="woodWrapper">
+                    <div class="woodBar"></div>
+                    <div class="woodProgressBar"></div>
+                </div>
+                <input type="button" id="woodStartButton" name="woodStartButton" value="Wood" onclick="woodProgress()">
+                <div class="stoneWrapper">
+                    <div class="stoneBar"></div>
+                    <div class="stoneProgressBar"></div>
+                </div>
+                <input type="button" id="stoneStartButton" name="stoneStartButton" value="Stone" onclick="stoneProgress()">
+            </div>
+            </div>
+        </div>
+
+        <!--Рынок-->
+        <div class="col-md-4">
+            <div class="block-example-mid">
+        </div>
+        </div>
+    </div>
 </div>
-<input type="button" id="stoneStartButton" name="stoneStartButton" value="Stone" onclick="stoneProgress()">
-</div>
-</div>
+
+<script src="libs/Jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="script.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script> -->
 
 </body>
 </html>

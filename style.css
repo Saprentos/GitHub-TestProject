@@ -1,36 +1,92 @@
-.main {
-    margin:0 auto; /* Центрируем блоки */
-    width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
-    max-width:700px; /* Устанавливаем максимальную ширину */
+.body {
+    font-family: "Comic Sans MS";
 }
-.inline div{
-    display:inline-block; /* Делаем блоки по горизонтали */
-    display: -moz-inline-stack; /* Для FireFox 2, тот же самый, что и inline-block */
-    vertical-align:top; /* Выравниваем их сверху */
-    font-size:16px; /* Ставим дочкам размер шрифта, иначе примет значение родителя */
-    zoom: 1;
-    *display: inline;
-}
-div.inline{font-size:0;} /* Ставим родителю значение 0, чтобы убрать отступы у блоков*/
 
-.statistic{
-    background-color: #00a496;
-    width:20%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
-    height:300px; /* Высота блока */
+/*Верхние блоки "Статистика" "Прогресс Бары" "Рынок"*/
+.block-example-top {
+    padding: 15px;
+    background-color: #3294ff;
+    border: 2px #9b13a4 solid;
 }
-.processBox{
-    background-color: #ffebd9;
-    width:80%;
-    height:300px;
+
+/*Статистика*/
+#statistic-top{
+    font-size: 20px;
+    background-color: #87a493;
+    color: #2e2ca4;
+    text-align: center;
 }
+
+/*Прогресс Бары*/
+#progress-bar-top{
+    font-size: 20px;
+    background-color: #9b9ca4;
+    color: #050109;
+    text-align: center;
+}
+
+/*Рынок*/
+#market-top{
+    font-size: 20px;
+    background-color: #89a47c;
+    color: #5b2125;
+    text-align: center;
+}
+
+
+/*Средние блоки "Статистика" "Прогресс Бары" "Рынок"*/
+.block-example-mid {
+    padding: 15px;
+    background-color: #e1eeff;
+    border: 2px #982ea4 solid;
+}
+
+/*Статистика*/
+#allMoney {
+position: absolute;
+    top: 19px;
+    left: 160px;
+}
+#allWorkers {
+    position: absolute;
+    top: 36px;
+    left: 160px;
+}
+#allWood {
+    position: absolute;
+    top: 54px;
+    left: 160px;
+}
+#allStone {
+    position: absolute;
+    top: 72px;
+    left: 160px;
+}
+#calc{
+    border: 2px #a47c33 solid; /*обводка кнопки*/
+    position: center;
+    margin: 10px;
+    width: 100px;
+    height: 25px;
+    background-color: #06a452;
+    border-radius: 10px;
+    color: #292fff;
+    cursor: pointer;
+    outline: 0 !important; /*Рамка вокруг выделенной кнопки*/
+}
+#calc:hover{
+    background-color: rgba(6, 164, 82, 0.76);
+}
+
+/*Прогресс Бары*/
 .woodWrapper{
     position: relative;
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 }
 .stoneWrapper{
     position: relative;
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 }
 .woodBar{
@@ -38,72 +94,72 @@ div.inline{font-size:0;} /* Ставим родителю значение 0, ч
     height: 20px;
     background: #eee;
     border-radius: 25px;
-    margin: 10px;
+    margin: 0;
+    border: 2px #2da465 solid;
 }
 .stoneBar{
     width: 100%;
     height: 20px;
     background: #eee;
     border-radius: 25px;
-    margin: 10px;
+    margin: 0;
+    border: 2px #2f80a4 solid;
 }
 .woodProgressBar{
      position: absolute;
      top: 0;
      height: 20px;
      text-align: center;
-     background: rgb(164, 134, 71);
+    background: rgba(255, 142, 19, 0.6);
      border-radius: 25px;
-    margin: 10px;
+    margin: 0;
  }
 .stoneProgressBar{
     position: absolute;
     top: 0;
     height: 20px;
     text-align: center;
-    background: rgba(5, 1, 9, 0.53);
+    background: rgba(5, 1, 9, 0.47);
     border-radius: 25px;
-    margin: 10px;
+    margin: 0;
 }
 #woodStartButton{
     border: 2px #2f80a4 solid; /*обводка кнопки*/
     position: center;
-    margin-left: 10px;
+    margin: 10px;
     width: 75px;
     height: 25px;
     background-color: #a48842;
     border-radius: 10px;
     color: #292fff;
-    font-family: "Comic Sans MS";
     cursor: pointer;
     outline: 0 !important; /*Рамка вокруг выделенной кнопки*/
+}
+#woodStartButton:hover{
+    background-color: rgba(164, 136, 66, 0.73); /*При наведении на кнопку меняет цвет*/
+}
+#woodStartButton:active{
+    background-color: rgb(164, 110, 38); /*При нажатии на кнопку темнеет кнопка*/
+    border: 2px #075ca4 solid;  /*При нажатии на кнопку темнеет обводка*/
 }
 #stoneStartButton{
     border: 2px #2f80a4 solid;/*обводка кнопки*/
     position: center;
-    margin-left: 10px;
+    margin: 10px;
     width: 75px;
     height: 25px;
     background-color: rgba(5, 1, 9, 0.36);
     border-radius: 10px;
     color: #292fff;
-    font-family: "Comic Sans MS";
     cursor: pointer;
     outline: 0 !important; /*Рамка вокруг выделенной кнопки*/
 }
-#allMoney {
-    margin: 15px;
-    padding: 5px;
+#stoneStartButton:hover{
+    background-color: rgba(5, 1, 9, 0.19); /*При наведении на кнопку меняет цвет*/
 }
-#allWorkers {
-    margin: 15px;
-    padding: 5px;
+#stoneStartButton:active{
+    background-color: rgba(5, 1, 9, 0.61); /*При нажатии на кнопку темнеет кнопка*/
+    border: 2px #0009a4 solid; /*При нажатии на кнопку темнеет обводка*/
 }
-#allWood {
-    margin: 31px;
-    padding: 5px;
-}
-#allStone {
-    margin: 32px;
-    padding: 5px;
-}
+
+/*Рынок*/
