@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <title>Saprentos Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.css">
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
 </head>
 <body class="body">
 
+<!--Firebase Authentication-->
+
+<div class="container">
+    <input type="email" id="txtEmail" placeholder="Email">
+    <input type="password" id="txtPassword" placeholder="Password">
+    <button id="btnLogin" class="btn btn-action">
+        Login in
+    </button>
+    <button id="btnSignUp" class="btn btn-secondary">
+        Sign up
+    </button>
+    <button id="btnLogout" class="btn btn-action hide">
+        Log out
+    </button>
+    
+</div>
 
 <!--Верхние блоки "Статистика" "Прогресс Бары" "Рынок"-->
 <div class="container">
