@@ -32,8 +32,6 @@
     color: #5b2125;
     text-align: center;
 }
-
-
 /*Средние блоки "Статистика" "Прогресс Бары" "Рынок"*/
 .block-example-mid {
     padding: 15px;
@@ -68,16 +66,19 @@ position: absolute;
     margin: 10px;
     width: 100px;
     height: 25px;
-    background-color: #06a452;
+    background-color: rgba(6, 164, 82, 0.75);
     border-radius: 10px;
     color: #292fff;
     cursor: pointer;
     outline: 0 !important; /*Рамка вокруг выделенной кнопки*/
 }
 #calc:hover{
-    background-color: rgba(6, 164, 82, 0.76);
+    background-color: rgba(6, 164, 82, 0.51);/*При наведении на кнопку меняет цвет*/
 }
-
+#calc:active{
+    background-color: rgb(6, 164, 82);/*При нажатии на кнопку темнеет кнопка*/
+    border: 2px #a46105 solid;/*При нажатии на кнопку темнеет обводка*/
+}
 /*Прогресс Бары*/
 .woodWrapper{
     position: relative;
@@ -163,3 +164,37 @@ position: absolute;
 }
 
 /*Рынок*/
+#prices{
+    border: 1px #a4330b solid;
+    margin: 4px;
+    padding: 4px;
+}
+#trade-button{
+    border: 2px #2f80a4 solid;/*обводка кнопки*/
+    position: center;
+    margin: 10px;
+    width: 75px;
+    height: 25px;
+    background-color: rgba(155, 19, 164, 0.36);
+    border-radius: 10px;
+    color: #292fff;
+    cursor: pointer;
+    outline: 0 !important; /*Рамка вокруг выделенной кнопки*/
+}
+#trade-button:hover{
+    background-color: rgba(155, 19, 164, 0.24);/*При наведении на кнопку меняет цвет*/
+}
+#trade-button:active{
+    background-color: rgba(155, 19, 164, 0.56);/*При нажатии на кнопку темнеет кнопка*/
+    border: 2px #1568a4 solid;/*При нажатии на кнопку темнеет обводка*/
+}
+#sale-wood{
+    margin: 4px;
+    padding: 3px;
+    width: 80px;
+}
+#sale-stone{
+    margin: 4px;
+    padding: 3px;
+    width: 80px;
+}
